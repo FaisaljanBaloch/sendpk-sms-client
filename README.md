@@ -11,13 +11,15 @@ npm install sendpk-sms-client
 ### ES Modules (ESM)
 
 ```js
-import smsClient from "sendpk-sms-client";
+import { SMSClient } from "sendpk-sms-client"
+const client = new SMSClient("Your API KEY", "BrandName");
 ```
 ### CommonJS
 If you are still using `require()` to import you modules.
 
 ```js
-const smsClient = require("sendpk-sms-client");
+const { SMSClient } = require("sendpk-sms-client");
+const client = new SMSClient("Your API KEY", "BrandName");
 ```
 
 ## Documentation
