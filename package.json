@@ -1,7 +1,7 @@
 {
-  "name": "sendpk-sms-api",
+  "name": "sendpk-sms-client",
   "version": "1.0.0",
-  "description": "This package provides a simple and intuitive API for sending SMS messages via the send.pk SMS service provider in Pakistan.",
+  "description": "This package provides a simple and efficient client for sending SMS messages via the send.pk SMS service provider in Pakistan.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

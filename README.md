@@ -1,5 +1,5 @@
-# SendPK SMS API
-This package provides a simple and intuitive API for sending SMS messages via the [Send.pk](https://sendpk.com/) SMS service provider in Pakistan.
+# SendPK SMS Client
+This package provides a simple and efficient client for sending SMS messages via the [Send.pk](https://sendpk.com/) SMS service provider in Pakistan.
 
 ## Installation
 Will be here soon!
@@ -10,7 +10,7 @@ Will be here soon!
 If you are still using `require()` to import you modules.
 
 ## Documentation
-The Documentation is coming soon!
+The Documentation will be coming soon!
 
 ## Contribution
 Unfortunately, this project doesn't follow any contribution template. So, It means you can easily work on an issue or create a new issue (if doesn't already), fix issue and create a pull request (PR).
