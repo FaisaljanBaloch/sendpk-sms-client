@@ -40,13 +40,13 @@ export class SMSClient {
    *          The mobile used to send sms on this mobile number.
    * @param message -
    *          The message is sent on the mobile number.
-   * 
+   *
    * @returns A response that contains:
    *    - An success object
    *    - An error object
    */
   async sendSMS(mobile, message) {
-    if (!this.#apiKey === "" || !this.#sender === "") {
+    if (!this.apiKey === "" || !this.sender === "") {
       throw new Error("API Key and Sender are required");
     }
 
@@ -60,8 +60,16 @@ export class SMSClient {
 
     try {
       const url = `https://sendpk.com/api/sms.php?api_key=${this.apiKey}&sender=${this.sender}&mobile=${mobile}&message=${message}&format=json`;
-      const response = await fetch(url);
-      return response;
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent":
+            "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)",
+        },
+      });
+      const data = await response.json();
+      return data;
     } catch (error) {
       throw new Error(error);
     }
