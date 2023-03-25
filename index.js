@@ -1,3 +1,4 @@
+"use strict";
 import fetch from "node-fetch";
 
 /**
@@ -29,8 +30,8 @@ export class SMSClient {
   }
 
   constructor(apiKey, sender) {
-    this.setApiKey(apiKey);
-    this.setSender(sender);
+    this.#apiKey = apiKey;
+    this.#sender = sender;
   }
 
   /**
