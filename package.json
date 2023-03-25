@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "This package provides a simple and efficient client for sending SMS messages via the send.pk SMS service provider in Pakistan.",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

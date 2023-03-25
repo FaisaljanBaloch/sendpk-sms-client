@@ -2,12 +2,23 @@
 This package provides a simple and efficient client for sending SMS messages via the [Send.pk](https://sendpk.com/) SMS service provider in Pakistan.
 
 ## Installation
-Will be here soon!
+You must have Nodejs v8.0.0 or higher and NPM package manager.
+```sh
+npm install sendpk-sms-client
+```
 
 ## Loading and Configuring the module
 ### ES Modules (ESM)
+
+```js
+import smsClient from "sendpk-sms-client";
+```
 ### CommonJS
 If you are still using `require()` to import you modules.
+
+```js
+const smsClient = require("sendpk-sms-client");
+```
 
 ## Documentation
 The Documentation will be coming soon!
