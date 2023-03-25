@@ -1,0 +1,26 @@
+{
+  "name": "sendpk-sms-api",
+  "version": "1.0.0",
+  "description": "This package provides a simple and intuitive API for sending SMS messages via the send.pk SMS service provider in Pakistan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "send.pk",
+    "sms",
+    "api",
+    "messaging",
+    "pakistan",
+    "marketing",
+    "nodejs",
+    "mobile"
+  ],
+  "author": "Faisal Jan",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.36.0",
+    "node-fetch": "^3.3.1"
+  },
+  "type": "module"
+}
