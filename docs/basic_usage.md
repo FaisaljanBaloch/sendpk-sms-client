@@ -1,6 +1,6 @@
 # Basic Usage
 
-### Send a message
+## Send a message
 The `sendSMS` function requires two parameters, a `Mobile` number and a `Message`. The message will be sent to that mobile number.
 
 * Using default promise-based syntax
