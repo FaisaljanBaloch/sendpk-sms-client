@@ -23,8 +23,8 @@ const client = new SMSClient("Your API KEY", "BrandName");
 ```
 
 ## Documentation
-The Documentation will be coming soon!
-* [Send a message](/docs/basic_usage.md)
+The Basic Usage
+* [Send a message](/docs/basic_usage.md#send-a-message)
 
 ## Contribution
 Unfortunately, this project doesn't follow any contribution template. So, It means you can easily work on an issue or create a new issue (if doesn't already exist), fix issue and create a pull request (PR).
