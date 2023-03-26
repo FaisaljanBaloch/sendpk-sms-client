@@ -24,7 +24,7 @@ const client = new SMSClient("Your API KEY", "BrandName");
 
 ## Documentation
 The Basic Usage
-* [Send a message](/docs/basic_usage.md#send-a-message)
+* [Send a message](https://github.com/FaisaljanBaloch/sendpk-sms-client/blob/main/docs/basic_usage.md#send-a-message)
 
 ## Contribution
 Unfortunately, this project doesn't follow any contribution template. So, It means you can easily work on an issue or create a new issue (if doesn't already exist), fix issue and create a pull request (PR).
