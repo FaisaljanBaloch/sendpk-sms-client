@@ -1,1 +1,3 @@
-export { default as SMSClient } from "./src/sms_client";
+const SMSClient = require("./src/sms_client");
+
+module.exports = { SMSClient };

@@ -1,5 +1,5 @@
 "use strict";
-import fetch from "node-fetch";
+const fetch = (...args) => import("node-fetch").then(({default: fetch}) => fetch(...args));
 
 /**
  * Create a client for send.pk API
@@ -9,7 +9,7 @@ import fetch from "node-fetch";
  * @param sender -
  *          The sender name is used to send sms on behalf of your company or brand. It can be a maximum of 11 characters.
  */
-export default class SMSClient {
+module.exports = class SMSClient {
   #apiKey = "";
   #sender = "";
 
@@ -75,4 +75,4 @@ export default class SMSClient {
       throw new Error(error);
     }
   }
-}
+};
