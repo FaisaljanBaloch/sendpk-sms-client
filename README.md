@@ -30,7 +30,7 @@ The Basic Usage
 Unfortunately, the project doesn't follow any contribution template. So, It means you can easily work on an issue or create a new issue (if doesn't already exist), fix issue and create a pull request (PR).
 
 **Note**
-Make a separate branch and name identical to your branches to any issue you solved. And your contribution will be highly appreciated by us!
+Make a separate branch and name identical of your branches to any issue you solved. Every contribution you make will be highly appreciated by us!
 
 ## Author
 This project was founded by **Faisal Jan**. A student and a developer who loves to create software programs that help any individual or organization.
