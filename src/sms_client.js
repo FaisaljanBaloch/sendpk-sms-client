@@ -75,4 +75,38 @@ module.exports = class SMSClient {
       throw new Error(error);
     }
   }
+
+  /**
+   * Check balance or points of send.pk API Account
+   *
+   * @param username -
+   *          The username is required to get balance.
+   * @param password -
+   *          The password is required of the username.
+   *
+   * @returns A response that contains:
+   *    - An success object
+   *    - An error object
+   */
+  async checkBalance(username, password) {
+    if (!this.apiKey === "" || !this.sender === "") {
+      throw new Error("API Key and Sender are required");
+    }
+
+    try {
+      const url = `https://sendpk.com/api/balance.php?username=${username}&password=${password}&format=json`;
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent":
+            "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)",
+        },
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      throw new Error(error);
+    }
+  }
 };

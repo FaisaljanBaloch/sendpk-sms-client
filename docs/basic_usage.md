@@ -27,3 +27,38 @@ async function sendSMS() {
 }
 sendSMS();
 ```
+
+## Check Balance
+The `checkBalance` function requires your send.pk username and password. It will return the current balance or points in your account.
+
+* Using default promise-based syntax
+```js
+client
+  .checkBalance("Your Username", "Your Password")
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+```
+
+* Or using `async and await`
+
+```js
+async function checkBalance() {
+  try {
+    const response = await client.checkBalance("Your Username", "Your Password");
+  } catch (error) {
+    console.log(error);
+  }
+}
+checkBalance();
+```
+**Output:**
+```js
+{
+  success: 'true',
+  results: [ { Package: '1', Balance: '6 SMS', Expiry: '0000-00-00' } ]
+}
+```
