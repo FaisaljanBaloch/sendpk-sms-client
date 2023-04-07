@@ -1,7 +1,7 @@
 {
   "homepage": "https://github.com/FaisaljanBaloch/sendpk-sms-client",
   "name": "sendpk-sms-client",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This package provides a simple and efficient client for sending SMS messages via the send.pk SMS service provider in Pakistan.",
   "main": "index.js",
   "engines": {
